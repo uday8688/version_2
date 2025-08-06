@@ -1,0 +1,55 @@
+export const ROUTES = {
+  HOME: '/',
+  LOGIN: '/login',
+  SIGNUP: '/signup',
+  CONTACT: '/contact',
+  PAYMENT: '/payment',
+  MAINTENANCE: '/maintenance',
+  BACKGROUND_VERIFICATION: '/background-verification',
+  LEASE_EXTENSION: '/lease-extension',
+  UTILITY_PAYMENTS: '/utility-payments',
+  TENANT_UTILITY_PAYMENTS: '/tenant/utility-payments',
+  SERVICE_PROVIDER_MANAGEMENT: '/service-provider-management',
+  ANNOUNCEMENTS: '/announcements',
+  SETTINGS: '/settings',
+  TENANT: '/tenant',
+  OWNER: '/owner',
+  ADMIN: '/admin',
+  VENDOR: '/vendor',
+  // Community features
+  COMMUNITY_EVENTS: '/community-events',
+  COMMUNITY_HUB: '/community-hub',
+  VISITOR_APPROVAL: '/visitor-approval',
+  // Admin sub-routes
+  ADMIN_USERS: '/admin/users',
+  ADMIN_ANALYTICS: '/admin/analytics',
+  ADMIN_PROPERTIES: '/admin/properties',
+  ADMIN_VENDORS: '/admin/vendors',
+  ADMIN_MONITORING: '/admin/monitoring',
+  ADMIN_ANNOUNCEMENTS: '/admin/announcements',
+  ADMIN_MAINTENANCE: '/admin/maintenance',
+  ADMIN_PAYMENTS: '/admin/payments',
+  ADMIN_REPORTS: '/admin/reports',
+  ADMIN_NOTIFICATIONS: '/admin/notifications',
+  ADMIN_SETTINGS: '/admin/settings',
+  ADMIN_BACKGROUND_VERIFICATION: '/admin/background-verification',
+  ADMIN_SERVICE_PROVIDERS: '/admin/service-providers',
+  // Owner routes
+  OWNER_TENANT_DIRECTORY: '/owner/tenant-directory',
+  OWNER_ACTIVE_LEASES: '/owner/active-leases',
+  OWNER_EXPIRING_LEASES: '/owner/expiring-leases',
+  OWNER_LEASE_EXTENSIONS: '/owner/lease-extensions',
+  OWNER_FINANCIAL_REPORTS: '/owner/financial-reports',
+  OWNER_TAX_REPORTS: '/owner/tax-reports',
+  OWNER_PROPERTIES: '/owner/properties',
+  OWNER_ANALYTICS: '/owner/analytics',
+} as const;
+
+export const USER_ROLES = {
+  TENANT: 'tenant',
+  OWNER: 'owner',
+  ADMIN: 'admin',
+  VENDOR: 'vendor',
+} as const;
+
+export type UserRole = typeof USER_ROLES[keyof typeof USER_ROLES];
